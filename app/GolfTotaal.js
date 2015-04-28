@@ -3,7 +3,7 @@
 //PlayList
 import React from 'react';
 import {Paper} from 'material-ui';
-import _ from 'lodash';
+import _ from 'underscore';
 
 require('./less/main.less');
 
@@ -30,7 +30,6 @@ export class PlayList extends React.Component {
     );
 
     return (
-      <div>
         <Paper zdepth='2'>
           <p>
             <h2>Results</h2>
@@ -47,7 +46,6 @@ export class PlayList extends React.Component {
             </table>
           </p>
         </Paper>
-      </div>
     );
   }
 }

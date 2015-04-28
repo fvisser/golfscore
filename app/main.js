@@ -1,7 +1,7 @@
 'use strict';
 
 import React from 'react';
-import CommentBox from './CommentBox.js';
+import CommentBox from './GolfTotaalBox.js';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 
 //Needed for onTouchTap

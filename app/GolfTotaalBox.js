@@ -26,7 +26,7 @@ module.exports = React.createClass({
 
   render: function () {
     return (
-      <div className='commentBox'>
+      <div className='golf-main'>
         <golf.PlayList data={this.state.data}/>
       </div>
     );
