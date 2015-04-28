@@ -7,7 +7,7 @@ import _ from 'underscore';
 
 require('./less/main.less');
 
-export class PlayList extends React.Component {
+export class GolfTotaal extends React.Component {
   render() {
 
     const results = _.chain(this.props.data)

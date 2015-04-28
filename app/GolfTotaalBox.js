@@ -1,7 +1,7 @@
 'use strict';
 
 import React from 'react';
-import * as golf from './GolfTotaal.js';
+import {GolfTotaal} from './GolfTotaal.js';
 import Reqwest from 'reqwest';
 
 module.exports = React.createClass({
@@ -27,7 +27,7 @@ module.exports = React.createClass({
   render: function () {
     return (
       <div className='golf-main'>
-        <golf.PlayList data={this.state.data}/>
+        <GolfTotaal data={this.state.data}/>
       </div>
     );
   }

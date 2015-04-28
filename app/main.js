@@ -1,7 +1,7 @@
 'use strict';
 
 import React from 'react';
-import CommentBox from './GolfTotaalBox.js';
+import GolfTotaalBox from './GolfTotaalBox.js';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 
 //Needed for onTouchTap
@@ -12,5 +12,5 @@ injectTapEventPlugin();
 
 const url = '/golftotaal';
 
-React.render(<CommentBox url={url}/>, document.getElementById('golfscoreTable'));
+React.render(<GolfTotaalBox url={url}/>, document.getElementById('golfscoreTable'));
 
