@@ -1,7 +1,7 @@
 'use strict';
 
 import React from 'react';
-import GolfTotaalBox from './GolfTotaalBox.js';
+import GolfTotaalBox from './components/GolfTotaalBox/GolfTotaalBox.js';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 
 //Needed for onTouchTap

@@ -5,7 +5,8 @@ import React from 'react';
 import {Paper} from 'material-ui';
 import _ from 'underscore';
 
-require('./less/main.less');
+// needs to go to import as well..
+require('../../less/main.less');
 
 export default class GolfTotaal extends React.Component {
   render() {

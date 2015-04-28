@@ -1,7 +1,7 @@
 'use strict';
 
 import React from 'react';
-import GolfTotaal from './GolfTotaal.js';
+import GolfTotaal from '../GolfTotaal/GolfTotaal.js';
 import Reqwest from 'reqwest';
 
 export default class GolfTotaalBox extends React.Component {
