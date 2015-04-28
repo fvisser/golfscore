@@ -5,7 +5,8 @@
   "private": true,
   "main": "app/main.js",
   "scripts": {
-    "dev": "webpack-dev-server --devtool eval --hot --progress --colors --content-base build"
+    "dev": "webpack-dev-server --devtool eval --hot --progress --colors --content-base build",
+    "server": "./node_modules/babel/bin/babel-node ./golfscore-server.js"
   },
   "dependencies": {
     "css-loader": "^0.11.0",

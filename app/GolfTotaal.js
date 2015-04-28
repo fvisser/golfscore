@@ -33,7 +33,7 @@ export class PlayList extends React.Component {
       <div>
         <Paper zdepth='2'>
           <p>
-            <h2>Another view of the results</h2>
+            <h2>Results</h2>
             <table className='material-design-table'>
               <tbody>
               <tr className='mui-table-header'>

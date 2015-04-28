@@ -2,8 +2,15 @@ var webpack = require('webpack');
 
 module.exports = {
   entry: {
-    app: ['webpack/hot/dev-server', './app/main.js']
+    app: [
+      'webpack-dev-server/client?http://localhost:3000',
+      'webpack/hot/only-dev-server',
+      './app/main.js']
   },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin()
+  ],
   output: {
     path: './build',
     filename: 'bundle.js'
@@ -20,16 +27,16 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: __dirname + '/node_modules',
-        loaders: ['react-hot','babel']
+        loaders: ['react-hot', 'babel']
       },
       {
-        test:/\.less/,
+        test: /\.less/,
         exclude: __dirname + '/node_modules',
         loader: 'style-loader!css-loader!less-loader'
       },
       {
-        test:/\.css$/,
-        exclude:__dirname + 'node_modules',
+        test: /\.css$/,
+        exclude: __dirname + 'node_modules',
         loader: 'style-loader!css-loader'
       }
     ]
@@ -37,7 +44,7 @@ module.exports = {
 
   jshint: {
     globalstrict: true,
-    esnext:true,
+    esnext: true,
     browser: true,
     devel: true
   },
