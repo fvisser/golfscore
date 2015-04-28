@@ -1,5 +1,5 @@
 import yql from 'yql';
-import _ from 'underscore';
+import _ from 'lodash';
 import express from 'express';
 
 const app = express();

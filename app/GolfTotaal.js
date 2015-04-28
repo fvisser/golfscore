@@ -3,7 +3,7 @@
 //PlayList
 import React from 'react';
 import {Paper} from 'material-ui';
-import _ from 'underscore';
+import _ from 'lodash';
 
 require('./less/main.less');
 
