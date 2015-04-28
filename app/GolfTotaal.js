@@ -34,7 +34,7 @@ export class PlayList extends React.Component {
         <Paper zdepth='2'>
           <p>
             <h2>Results</h2>
-            <table className='material-design-table'>
+            <table>
               <tbody>
               <tr className='mui-table-header'>
                 <th className='material-table-header-item'>Rounds played</th>
